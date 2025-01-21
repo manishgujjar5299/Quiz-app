@@ -1,0 +1,26 @@
+[
+    {
+      "category": "Science",
+      "question": "What is the chemical symbol for water?",
+      "options": ["O2", "H2O", "CO2", "NaCl"],
+      "correct": "H2O"
+    },
+    {
+      "category": "History",
+      "question": "Who was the first President of the United States?",
+      "options": ["Abraham Lincoln", "George Washington", "John Adams", "Thomas Jefferson"],
+      "correct": "George Washington"
+    },
+    {
+      "category": "Programming",
+      "question": "What does HTML stand for?",
+      "options": [
+        "HyperText Markup Language",
+        "HighText Machine Language",
+        "HyperText and Links Markup Language",
+        "None of the above"
+      ],
+      "correct": "HyperText Markup Language"
+    }
+  ]
+  
