@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz App</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Quiz App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="app">
-    <header>
-      <h1>Online Quiz App</h1>
-      <button id="darkModeToggle">Toggle Dark Mode</button>
-    </header>
-    
-    <!-- Category Selection Section -->
-    <div id="categorySelection">
-      <label for="categories">Select Category:</label>
-      <select id="categories">
-        <option value="Science">Science</option>
-        <option value="History">History</option>
-        <option value="Programming">Programming</option>
-      </select>
-      <button id="startQuiz">Start Quiz</button>
+    <div id="app">
+        <header>
+            <h1>Online Quiz App</h1>
+            <button id="darkModeToggle">Toggle Dark Mode</button>
+        </header>
+
+        <div id="categorySelection">
+            <label for="categories">Select Category:</label>
+            <select id="categories">
+                <option value="Science">Science</option>
+                <option value="History">History</option>
+                <option value="Programming">Programming</option>
+            </select>
+
+            <label for="difficulty">Select Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <button id="startQuiz">Start Quiz</button>
+        </div>
+
+        <div id="quizContainer" style="display: none;">
+            <div id="timer"></div>
+            <div id="quiz"></div>
+            <button id="submit" style="display: none;">Submit</button>
+            <div id="result"></div>
+        </div>
+
+        <div id="leaderboard" style="margin: 20px;"></div>
     </div>
 
-    <!-- Quiz Container -->
-    <div id="quizContainer" style="display: none;">
-      <div id="quiz">
-        <!-- Quiz Questions will be loaded here -->
-      </div>
-      <button id="submit" style="display: none;">Submit</button>
-      <div id="result"></div>
-    </div>
-  </div>
-  
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
